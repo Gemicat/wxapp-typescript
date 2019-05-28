@@ -1,0 +1,15 @@
+{
+  "name": "demo",
+  "version": "1.0.1",
+  "scripts": {
+    "dev": "./node_modules/.bin/gulp watch",
+    "compile": "./node_modules/typescript/bin/tsc",
+    "tsc": "node ./node_modules/typescript/lib/tsc.js"
+  },
+  "devDependencies": {
+    "gulp": "4.0.2",
+    "gulp-shell": "0.7.0",
+    "gulp-watch": "5.0.1",
+    "typescript": "^3.3.3333"
+  }
+}
