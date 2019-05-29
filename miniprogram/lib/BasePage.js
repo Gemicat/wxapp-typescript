@@ -6,6 +6,7 @@ export default class BasePage {
       abs: '111'
     })
   }
+  data = {}
   onLoad() {
     console.log(11112)
   }

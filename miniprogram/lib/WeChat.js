@@ -22,6 +22,7 @@ WeChat.createPage = function (PageClass) {
  */
 WeChat.createComponent = function (ComponentClass) {
   const component = newInstance(ComponentClass)
+  console.log(component)
   WeChat.Component(component);
 };
 

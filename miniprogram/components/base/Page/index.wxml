@@ -1,0 +1,5 @@
+<!--components/base/Page/index.wxml-->
+<view>
+  <text>kdfdksfjksjfkjdfs1</text>
+  <slot id="slot"></slot>
+</view>
