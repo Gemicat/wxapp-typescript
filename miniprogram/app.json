@@ -9,5 +9,8 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
+  "usingComponents": {
+    "base-page": "./components/base/Page/index"
+  },
   "sitemapLocation": "sitemap.json"
 }

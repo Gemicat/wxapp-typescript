@@ -20,7 +20,7 @@
 │   │   └── base
 │   │       └── Page
 │   │           ├── 容器组件
-│   ├── constant
+│   ├── constants
 │   │   └── 常量
 │   ├── lib
 │   │   ├── BasePage.js

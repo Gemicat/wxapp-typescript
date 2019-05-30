@@ -17,6 +17,7 @@ class Page extends WeChat.BasePage {
     })
   }
   onLoad() {
+    this.api.user.getUserInfo({data: '1111111'})
     this.setData({
       userInfo: this.globalData.userInfo,
       hasUserInfo: true,

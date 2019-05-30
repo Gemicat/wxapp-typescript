@@ -1,15 +1,15 @@
+import api from '../api/index'
+
 export default class BasePage {
   constructor() {
     const {globalData} = getApp()
     this.globalData = globalData
+    this.api = api
     this.setDefaultData({
       abs: '111'
     })
   }
   data = {}
-  onLoad() {
-    console.log(11112)
-  }
   showErrorMsg(title) {
     wx.showModal({})
   }
