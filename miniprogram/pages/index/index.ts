@@ -17,7 +17,11 @@ class Page extends WeChat.BasePage {
     })
   }
   onLoad() {
-    this.api.user.getUserInfo({data: '1111111'})
+    this.api.user.getUserInfo({data: '1111111'}).then(() => {
+      console.log('请求成功咯')
+    }).catch(() => {
+      console.log('请求失败咯')
+    })
     this.setData({
       userInfo: this.globalData.userInfo,
       hasUserInfo: true,

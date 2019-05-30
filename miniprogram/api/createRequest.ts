@@ -5,7 +5,7 @@ function createRequest(apis = {}) {
   Object.keys(apis).forEach(key => {
     apiList[key] = (options) => {
       const { data = {} } = options
-      request.request({
+      return request.request({
         ...apis[key],
         data
       })
