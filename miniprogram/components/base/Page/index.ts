@@ -12,13 +12,8 @@ class Component extends WeChat.BasePage {
   }
   lifetimes = {
     attached() {
-      console.log(11112)
+      console.log('容器组件生命周期调用')
     }
-  }
-  onLoad() {
-    const query = wx.createSelectorQuery()
-    query.select('#slot').boundingClientRect()
-    console.log(query)
   }
 }
 

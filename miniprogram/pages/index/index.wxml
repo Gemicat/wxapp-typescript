@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<base-page>
+<base-page inner="首页自定义">
   <view class="container">
     <view class="userinfo">
       <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
