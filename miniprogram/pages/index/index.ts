@@ -1,4 +1,4 @@
-import WeChat from '../../lib/WeChat'
+const {WeChat, ...app} = getApp()
 class Page extends WeChat.BasePage {
   constructor() {
     super()
@@ -16,14 +16,15 @@ class Page extends WeChat.BasePage {
       url: '../logs/logs'
     })
   }
-  onLoad() {
+  userInfoReadyCallback() {
     this.api.user.getUserInfo({data: '1111111'}).then(() => {
       console.log('请求成功咯')
     }).catch(() => {
       console.log('请求失败咯')
     })
+    console.log(app.globalData.userInfo)
     this.setData({
-      userInfo: this.globalData.userInfo,
+      userInfo: app.globalData.userInfo,
       hasUserInfo: true,
     })
   }

@@ -1,4 +1,4 @@
-//app.ts
+import WeChat from './lib/WeChat'
 export interface IMyApp {
   userInfoReadyCallback?(res: wx.UserInfo): void
   globalData: {
@@ -41,5 +41,6 @@ App<IMyApp>({
     })
   },
   globalData: {
-  }
+  },
+  WeChat
 })
