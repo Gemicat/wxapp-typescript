@@ -4,12 +4,15 @@
   "scripts": {
     "dev": "./node_modules/.bin/gulp watch",
     "compile": "./node_modules/typescript/bin/tsc",
-    "tsc": "node ./node_modules/typescript/lib/tsc.js"
+    "tsc": "node ./node_modules/typescript/lib/tsc.js",
+    "webpack": "./node_modules/.bin/webpack --config webpack.config.js"
   },
   "devDependencies": {
     "gulp": "4.0.2",
     "gulp-shell": "0.7.0",
     "gulp-watch": "5.0.1",
-    "typescript": "^3.3.3333"
+    "typescript": "^3.3.3333",
+    "webpack": "4.35.3",
+    "webpack-cli": "3.3.5"
   }
 }
